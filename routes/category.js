@@ -29,7 +29,7 @@ router.get('/categories', async (req, res) => {
         res.json({
             success: true,
             categories: categories
-        })
+        });
     } catch (err) {
         res.status(500).json({
             success: false,
